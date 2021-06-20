@@ -37,6 +37,7 @@ function App() {
  const updateQuery = (e) =>{
  	e.preventDefault();
  	setQuery(search);
+ 	setSearch('');
  }
   return (
     <div className="App">
@@ -50,6 +51,7 @@ function App() {
         title={recipe.recipe.label} 
         calories={recipe.recipe.calories} 
         image={recipe.recipe.image} 
+        ingredients={recipe.recipe.ingredients}
       />
 
     ))}
