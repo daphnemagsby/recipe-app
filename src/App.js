@@ -27,7 +27,7 @@ function App() {
 	 		console.log("Oh No Something Went Wrong!");
 	 	}
 	}
-  	getRecipes();
+  	//getRecipes();
   }, [query, APP_ID, APP_KEY]);
 
  const updateSearch = (e) =>{
@@ -52,6 +52,7 @@ function App() {
         calories={recipe.recipe.calories} 
         image={recipe.recipe.image} 
         ingredients={recipe.recipe.ingredients}
+        url={recipe.recipe.url}
       />
 
     ))}
